@@ -6,12 +6,12 @@ export const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: 'rgba(0, 0, 0, 0.4)',
     justifyContent: 'center',
-    alignItems: 'center'
-
+    //alignItems: 'center',
+    paddingHorizontal: 20,
   },
   innerContainer: {
     borderRadius: 10,
-    padding: 20
+    padding: 20,
   },
   content1: {
     flexDirection: 'row',
@@ -24,7 +24,7 @@ export const styles = StyleSheet.create({
     height: 60
   },
   textContainer: {
-
+    flex: 1,
   },
   text: {
     fontFamily: GLOBAL.FONT_FAMILY.REGULAR,

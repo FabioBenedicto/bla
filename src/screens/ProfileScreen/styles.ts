@@ -1,52 +1,58 @@
 import { StyleSheet } from 'react-native'
+import { GLOBAL } from '../../themes/global'
 
 export const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingHorizontal: 20
+    paddingHorizontal: 20,
+    justifyContent: 'space-between',
+  },
+  content: {
+    gap: 40,
   },
   header: {
-    marginBottom: 50,
     marginHorizontal: -20
   },
-  background: {
-    height: '40%'
+  iconContainer: {
+    alignSelf: 'flex-end',
+    marginTop: 20,
+    marginRight: 20,
   },
-  userContainer: {
+  profileInformationContainer: {
     flexDirection: 'row',
-    alignItems: 'flex-end',
     marginTop: -30,
     paddingHorizontal: 20
   },
-  userImage: {
+  profilePicture: {
     width: 100,
     height: 100,
     borderRadius: 50,
     marginRight: 30
   },
-  userTextContainer: {
-    flex: 1
+  profileInformationTextContainer: {
+    //marginTop: 30,
+    alignSelf: 'flex-end',
+    //flex: 1,
+    gap: 6
   },
-  userText: {
+  name: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 30,
-    marginBottom: 6
   },
-  userSubtext: {
+  email: {
     fontFamily: 'Roboto_400Regular',
     fontSize: 20,
     color: '#989898'
   },
-  innerContainer: {
+  main: {
     flex: 1,
-    paddingHorizontal: 20
   },
   titleContainer: {
     marginBottom: 40
   },
   title: {
-    fontSize: 30,
-    fontFamily: 'Roboto_500Medium'
+    fontFamily: GLOBAL.FONT_FAMILY.MEDIUM,
+    fontSize: GLOBAL.FONT_SIZE.LG
   },
   line: {
     borderBottomWidth: 1
@@ -56,7 +62,8 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-between'
   },
   noLockersFoundedContainer: {
-
+    marginBottom: 40,
+    alignSelf: 'center',
   },
   noLockersFoundedImage: {
     width: 230,

@@ -19,7 +19,11 @@ export function MyModal ({ setIsVisible, darkTheme, ...props }: MyModalProps) {
     >
       <Pressable
         onPress={(event) => { event.target === event.currentTarget && setIsVisible(false) }}
-        style={styles.container}
+        style={[styles.container, 
+          {
+            backgroundColor: darkTheme ? 'rgba(255, 255, 255, 0.2)' : undefined
+          }
+        ]}
       >
         <View
           style={[styles.innerContainer, {
